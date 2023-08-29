@@ -21,6 +21,8 @@ export const CurrentWeather = () => {
     setIsOpen(!isOpen);
   };
 
+  const ICONURL = `http://openweathermap.org/img/wn/${iconId}@4x.png`;
+
   return (
     <section
       className="md:w-[31%] lg:w-[24%] xl:w-[31%] relative h-full p-5"
@@ -48,7 +50,7 @@ export const CurrentWeather = () => {
           className="w-full opacity-5 absolute bg-cover bg-center left-0"
         />
         <img
-          src={`https:openweathermap.org/img/wn/${iconId}@4x.png`}
+          src={ICONURL}
           alt="image"
           className="max-w-[250px] w-full mx-auto"
         />

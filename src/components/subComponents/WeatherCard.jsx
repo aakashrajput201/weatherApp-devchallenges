@@ -14,7 +14,7 @@ export const WeatherCard = ({ info, index }) => {
           {index == 1 ? "Tomorrow" : getDay(info.dt)}
         </div>
         <img
-          src={`https:openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`}
+          src={`http:openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`}
           alt=""
         />
       </div>
