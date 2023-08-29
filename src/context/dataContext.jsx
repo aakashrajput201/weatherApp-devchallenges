@@ -27,7 +27,7 @@ export const DataContextProvider = ({ children }) => {
   const getReverseGeoCordinate = async ({ lat, lon }) => {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=cd3a425304d02735c79429500819f184`
+        `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=cd3a425304d02735c79429500819f184`
       );
       const results = await response.json();
       console.log("results", results);
